@@ -1,13 +1,13 @@
-package com.hakancevik.landmarkbook;
+package com.hakancevik.landmarkbook.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.hakancevik.landmarkbook.Singleton;
 import com.hakancevik.landmarkbook.databinding.ActivityBooksBinding;
-import com.hakancevik.landmarkbook.databinding.ActivityMainBinding;
+import com.hakancevik.landmarkbook.model.Landmark;
 
 public class BooksActivity extends AppCompatActivity {
 
@@ -21,14 +21,12 @@ public class BooksActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-
         Singleton singleton = Singleton.getInstance();
         Landmark selectedLandmark = singleton.getSelectedLandmark();
 
         binding.nameText.setText(selectedLandmark.name);
         binding.countryText.setText(selectedLandmark.country);
         binding.imageView.setImageResource(selectedLandmark.image);
-
 
         //Intent intent = getIntent();
         //Landmark comesLandmark = (Landmark) intent.getSerializableExtra("landmark");

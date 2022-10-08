@@ -1,12 +1,12 @@
-package com.hakancevik.landmarkbook;
+package com.hakancevik.landmarkbook.model;
 
 import java.io.Serializable;
 
 public class Landmark implements Serializable {
 
-    String name;
-    String country;
-    int image;
+    public String name;
+    public String country;
+    public int image;
 
     public Landmark(String name, String country, int image) {
         this.name = name;

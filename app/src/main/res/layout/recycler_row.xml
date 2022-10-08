@@ -2,22 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_margin="3dp">
 
     <TextView
         android:id="@+id/recyclerViewTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="7dp"
-        android:text="text"
+        android:layout_margin="3dp"
+        android:text="@string/text"
         android:textAlignment="center"
-        android:textColor="#BA0707"
-        android:textSize="30sp">
-
-
-    </TextView>
-
-
-
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
 </LinearLayout>

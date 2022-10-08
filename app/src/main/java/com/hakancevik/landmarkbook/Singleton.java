@@ -1,6 +1,6 @@
 package com.hakancevik.landmarkbook;
 
-import android.graphics.Bitmap;
+import com.hakancevik.landmarkbook.model.Landmark;
 
 public class Singleton {
 

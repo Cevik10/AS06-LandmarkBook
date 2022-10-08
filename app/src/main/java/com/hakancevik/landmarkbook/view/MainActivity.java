@@ -1,4 +1,4 @@
-package com.hakancevik.landmarkbook;
+package com.hakancevik.landmarkbook.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 
 
+import com.hakancevik.landmarkbook.R;
+import com.hakancevik.landmarkbook.adapter.LandmarkAdapter;
 import com.hakancevik.landmarkbook.databinding.ActivityMainBinding;
+import com.hakancevik.landmarkbook.model.Landmark;
 
 import java.util.ArrayList;
 
